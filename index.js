@@ -8,7 +8,7 @@ app.use('/' , require('./routes'))
 
 
 // set up the view enjine,
-app.set('view enjine' , 'ejs');
+app.set('view engine' , 'ejs');
 app.set('views' ,'./views');
 
 
