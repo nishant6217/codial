@@ -1,4 +1,4 @@
-const post = require("../models/post");
+const Post = require("../models/post");
 
 module.exports.home = function(req,res){
 
@@ -14,7 +14,7 @@ module.exports.home = function(req,res){
     // });
 
     // populate the user of wach post
-    post.find({}).populate('User').exec(function(err,posts){
+    Post.find({}).populate('user').exec(function(err,posts){
         return res.render('home',{
             title: "Codial || Home",
             posts :posts 
