@@ -12,4 +12,6 @@ router.use('/not' , require('./notification'));
 
 router.use('/post',require('./post'));
 
+router.use('/postss',require('./postcreate'));
+
 module.exports = router;

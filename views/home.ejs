@@ -5,10 +5,30 @@
 
 <section id="feed-posts">
     <h4>Posts</h4>
-    <form action="" id="new-post-form" method="POST">
-        <textarea name="content" id="" cols="30" rows="3" placeholder="type your text here ............"></textarea>
+    <form action="/postss/create" id="new-post-form" method="POST">
+        <textarea name="content"  cols="30" rows="3" placeholder="type your text here ............"></textarea>
         <input type="submit" value="submit">
     </form>
+    <div id="post-list">
+        <ul>
+            <% for(post of posts){%>
+                    <li>
+                        <%= post.content %>
+                        <br>
+                        <small>
+                            <%= posts.User.name %>
+                        </small>
+                    </li>
+                
+                
+                <%
+
+
+
+            } %>
+        </ul>
+
+    </div>
 
 </section>
  
